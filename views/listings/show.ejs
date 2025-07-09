@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindmyStay</title>
+</head>
+<body>
+    <h2>Listing</h2>
+<ul>
+    <li><%=listing.title %></li>
+    <li><%=listing.description%></li>
+    <img src="<%=listing.image.url%>" alt="">
+    <p > &#x24; <%= listing.price%></p>
+    <p><%= listing.location%></p>
+    <p><%= listing.country%></p>
+    
+</ul>
+</body>
+</html>

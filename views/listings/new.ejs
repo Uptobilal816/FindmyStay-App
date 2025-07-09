@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindmyStay</title>
+</head>
+<body>
+    <form method="post" action="/listings">
+    <h2>Create a new listing</h2>
+    <input name="newlisting[title]" type="text" placeholder="Enter title"/>
+    <br><br>
+    <textarea name="newlisting[description]" placeholder="Enter description"></textarea>
+    <br><br>
+    <input type="text" name="newlisting[image]" placeholder="PASTE/ ENTER URL"> 
+    <br><br>
+     <input name="newlisting[price]" type="text" placeholder="Enter price"/>
+    <br><br> <input name="newlisting[location]" type="text" placeholder="Enter location"/>
+    <br><br> <input name="newlisting[country]" type="text" placeholder="Enter country"/>
+    <br><br>
+    <button>Add</button>
+    </form>
+</body>
+</html>
