@@ -1,0 +1,35 @@
+<%layout("/layouts/boilerplate.ejs")-%>
+<body>
+   <div class="container mt-5">
+    <h2 class="mb-4">Edit your listing</h2>
+    <form method="POST" action="/listings/<%=listing._id%>?_method=PUT">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input name="newlisting[title]" type="text" class="form-control" value="<%=listing.title%>" placeholder="Enter Title"/>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="newlisting[description]" class="form-control" rows="3" placeholder="Enter description"><%=listing.description%></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Paste Image Url</label>
+            <input type="text" name="newlisting[image]" value="<%=listing.image.url%>" class="form-control" placeholder="PASTE/ ENTER URL">
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input name="newlisting[price]" type="number" class="form-control" value="<%=listing.price%>" placeholder="Enter price"/>
+        </div>
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input name="newlisting[location]" type="text" class="form-control" value="<%=listing.location%>" placeholder="Enter location"/>
+        </div>
+        <div class="mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input name="newlisting[country]" type="text" class="form-control" value="<%=listing.country%>" placeholder="Enter country"/>
+        </div>
+        <div class="d-grid gap-2 mb-3">
+            <button class="btn btn-primary" type="submit">Update Listing</button>
+        </div>
+    </form>
+</div>
+</body>

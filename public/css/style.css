@@ -1,0 +1,62 @@
+.navbar{
+    height: 5rem;
+
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+.f-info{
+    text-align: center;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    vertical-align: middle;
+
+}
+.f-info-soicals i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.f-info-links, .f-info-soicals{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+/*Card */
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+
+}
+.card-link{
+    text-decoration: none;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight: 400 !important;
+}
